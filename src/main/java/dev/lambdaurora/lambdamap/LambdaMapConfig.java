@@ -125,7 +125,7 @@ public final class LambdaMapConfig {
 
 					return null;
 				}).map(HudDecorators::get)
-				.orElse(HudDecorators.MAP);
+				.orElse(HudDecorators.SLOT);
 
 		LOGGER.info("Configuration loaded.");
 	}
