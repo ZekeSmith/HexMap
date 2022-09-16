@@ -1,5 +1,7 @@
 # LambdaMap
 
+## Fork for testing on HexMC
+
 <!-- modrinth_exclude.start -->
 ![Java 17](https://img.shields.io/badge/language-Java%2017-9B599A.svg?style=flat-square) <!-- modrinth_exclude.end -->
 [![GitHub license](https://img.shields.io/github/license/LambdAurora/LambdaMap?style=flat-square)](https://raw.githubusercontent.com/LambdAurora/LambdaMap/1.18/LICENSE)
