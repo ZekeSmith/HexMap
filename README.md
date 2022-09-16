@@ -1,6 +1,6 @@
 # LambdaMap
 
-## Fork for testing on HexMC
+## Fork for use in HexMC modpack
 
 <!-- modrinth_exclude.start -->
 ![Java 17](https://img.shields.io/badge/language-Java%2017-9B599A.svg?style=flat-square) <!-- modrinth_exclude.end -->
