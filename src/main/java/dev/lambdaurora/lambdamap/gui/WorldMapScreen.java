@@ -45,9 +45,8 @@ public class WorldMapScreen extends SpruceScreen {
 	@Override
 	protected void init() {
 		super.init();
-
-		SpruceTabbedWidget tabs = this.addDrawableChild(new SpruceTabbedWidget(Position.origin(), this.width, this.height, new LiteralText("LambdaMap")));
-		tabs.getList().setBackground(RandomPrideFlagBackground.random());
+		SpruceTabbedWidget tabs = this.addDrawableChild(new SpruceTabbedWidget(Position.origin(), this.width, this.height, new LiteralText("HexMap")));
+		tabs.getList().setBackground(EmptyBackground.EMPTY_BACKGROUND);
 		tabs.addTabEntry(new TranslatableText("lambdamap.tabs.world_map"), new TranslatableText("lambdamap.tabs.world_map.description").formatted(Formatting.GRAY),
 				(width, height) -> new WorldMapWidget(Position.origin(), width, height));
 		tabs.addTabEntry(new TranslatableText("lambdamap.tabs.markers"), new TranslatableText("lambdamap.tabs.markers.description").formatted(Formatting.GRAY),
@@ -58,7 +57,6 @@ public class WorldMapScreen extends SpruceScreen {
 
 	private SpruceOptionListWidget buildConfigTab(int width, int height) {
 		var list = new SpruceOptionListWidget(Position.origin(), width, height);
-		list.setBackground(EmptyBackground.EMPTY_BACKGROUND);
 
 		list.addSingleOptionEntry(new SpruceSeparatorOption("lambdamap.config.category.general", true, null));
 		list.addSingleOptionEntry(this.mod.getConfig().getRenderBiomeColorsOption());
